@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hồ sơ · Project 2 · Nimbus</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/mainjs.js" defer></script>
+</head>
+<body><main>
+    <p class="eyebrow">PROJECT 2 · NIMBUS JOSE + JWT</p>
+    <h1>Thông tin người dùng</h1>
+    <p id="feedback" role="status" aria-live="polite"></p>
+    <section id="profile" hidden>
+        <img id="images" src="/images/avatar.svg" alt="Ảnh đại diện mặc định" width="80" height="80">
+        <h2 id="fullName"></h2>
+        <p id="email"></p>
+        <p>Dữ liệu được lấy từ <code>GET /users/me</code> bằng Bearer token.</p>
+        <button id="load-users" type="button">Xem danh sách người dùng</button>
+        <button id="logout" type="button">Đăng xuất</button>
+    </section>
+    <section id="users-section" hidden>
+        <h2>Danh sách người dùng</h2>
+        <div class="table-wrap"><table>
+            <thead><tr><th>ID</th><th>Họ tên</th><th>Email</th></tr></thead>
+            <tbody id="users"></tbody>
+        </table></div>
+    </section>
+</main></body>
+</html>

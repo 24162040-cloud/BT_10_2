@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập · Project 2 · Nimbus</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/mainjs.js" defer></script>
+</head>
+<body><main>
+    <p class="eyebrow">PROJECT 2 · THAY JJWT BẰNG NIMBUS</p>
+    <h1>JWT với Nimbus</h1>
+    <p>Đăng ký tài khoản, đăng nhập và gọi API bằng Bearer token.</p>
+    <p id="feedback" role="status" aria-live="polite"></p>
+    <div class="columns">
+        <section><h2>Đăng nhập</h2>
+            <form id="login-form">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" maxlength="100" autocomplete="username" required>
+                <label for="password">Mật khẩu</label>
+                <input id="password" name="password" type="password" maxlength="72" autocomplete="current-password" required>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </section>
+        <section><h2>Tạo tài khoản</h2>
+            <form id="signup-form">
+                <label for="fullName">Họ tên</label>
+                <input id="fullName" name="fullName" maxlength="50" autocomplete="name" required>
+                <label for="signup-email">Email</label>
+                <input id="signup-email" name="email" type="email" maxlength="100" autocomplete="email" required>
+                <label for="signup-password">Mật khẩu (ít nhất 6 ký tự)</label>
+                <input id="signup-password" name="password" type="password" minlength="6" maxlength="72" autocomplete="new-password" required>
+                <button type="submit">Đăng ký</button>
+            </form>
+        </section>
+    </div>
+</main></body>
+</html>
